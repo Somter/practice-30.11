@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+
+        // function TwoNumber(a, b){
+        //   return Math.min(a, b);
+        // }
+
+        //2
+        // function Degree(x){
+        //     return Math.pow(2, x);
+        // }
+
+        //3
+        // function Calculator(x, y, sign) {
+        //     let rez = 0;
+        //     switch (sign) {
+        //         case '+':
+        //             rez = x + y;
+        //             break;
+        //         case '-':
+        //             rez = x - y;
+        //             break;
+        //         case '*':
+        //             rez = x * y;
+        //             break;
+        //         case '/':
+        //             rez = x / y;
+        //             break;
+        //     }
+        //     document.write(x + sign + y + " = " + rez);
+        // }
+
+        //4
+        // function PrimeNumber(number) {
+        //     for (let i = 2; i <= Math.sqrt(number); i++) {
+        //         if (number % i == 0) {
+        //           return 1;
+        //         }
+        //         else {
+        //            return -1;
+        //         }
+        //     }
+        // }
+
+        //5
+        // function Table(number){
+        //     for(let i = 2; i <= 9; i++){
+        //         document.write(number + " * " + i + " = " + number*i);
+        //         document.write("<br>");
+        //     }
+        // }
+
+        //6
+        // function Division(x, y){
+        //     return x - y * Math.floor(x / y);
+        // }
+
+        //7
+        // function SumArr(arr, size) {
+        //     let sum = 0;
+        //     for (let i = 0; i < size; i++) {
+        //         sum += arr[i];
+        //     }
+        //     return sum;
+        // }
+
+        //8
+        // function MaxArr(arr) {
+        //     let max = arr[0];
+
+        //     for (let i = 1; i < arr.length; i++) {
+        //         if (arr[i] > max) {
+        //             max = arr[i];
+        //         }
+        //     }
+        //     return max;
+        // }
+
+        //9
+        // function NumberRange(start, end, num) {
+        //     for(let i = start; i <= end; i++) {
+        //         if ((num && i % 2 === 0) || (!num && i % 2 !== 0)) {
+        //           document.write(i + ", ");
+        //         }
+        //     }
+        // }
+
+
+    </script>
+</head>
+
+<body>
+    <script>
+
+        //1. Написать функцию, которая принимает 2 числа и возврщает меньшее из них.
+        // let rez = TwoNumber(5, 10);
+        // document.write("Меньшее число: " + rez);
+
+        //2. Написать функцию, которая возводит переданное число в указанную степень
+        // let x = prompt("Введите степень:");
+        // let rez = Degree(x);
+        // document.write("2 ^ "+ x + " = "+ rez);
+
+        //3. Написать функцию, которая принимает 2 числа и знак (+ - * /), считает пример и возвращает результат.
+        // let x = parseInt(prompt("Первое число:"));
+        // let sign = prompt("Знак (+ - * /)");
+        // let y = parseInt(prompt("Второе число"));
+        // Calculator(x, y, sign);
+
+        //4. Написать функцию, которая проверяет, является ли переданное ей число простым.
+        // let x = parseInt(prompt("Введите исло:"));
+        // let rez = PrimeNumber(x);
+        // if(rez == 1){
+        //     document.write("Число четное");
+        // }
+        // else{
+        //     document.write("Число нечетное");
+        // }
+
+        //5. Написать функцию, которая принимает число и выводит таблицу умножения для этого числа. Вызовите функцию для всех чисел от 2 до 9.
+        // let x = parseInt(prompt("Введите число:"));
+        // Table(x);
+
+        // 6. Написать функцию, которая реализует работу оператора %. Функция принимает 2 параметра и возвращает остаток от деления первого параметра на второй. В функции использовать только + - * /, оператор % не использовать.
+        // let x = parseInt(prompt("Первое число:"));
+        // let y = parseInt(prompt("Второе число"));
+
+        // let rez = Division(x, y);
+        // document.write("Ответ: " + rez);
+
+        // 7. Написать функцию, которая принимает от 1 до 5 чисел и возвращает их сумму.
+
+        // let size = Math.floor(Math.random() * 5) + 1;
+        // let arr = [];
+
+        // for (let i = 0; i < size; i++) {
+        //     arr[i] = Math.floor(Math.random() * 50);
+        // }
+        // document.write("Массив: " );
+        // for (let i = 0; i < size; i++) {
+        //     document.write(arr[i] + ", ");
+
+        // }
+        // document.write("<br>");
+
+        // let rez = SumArr(arr, size);
+        // document.write("Сумма: " + rez);
+
+        // Написать функцию, которая принимает от 1 до 5 чисел и возвращает большее из них
+        // let size = Math.floor(Math.random() * 5) + 1;
+        // let arr = [];
+
+        // for (let i = 0; i < size; i++) {
+        //     arr[i] = Math.floor(Math.random() * 50);
+        // }
+        // document.write("Массив: " );
+        // for (let i = 0; i < size; i++) {
+        //     document.write(arr[i] + ", ");
+        // }
+        // document.write("<br>");
+        // let max = MaxArr(arr);  
+        // document.write("Максимальный элемент: " + max); 
+
+        //9. Написать функцию, которая выводит все четные или нечетные числа, в указанном пользователем диапазоне. Какие числа выводить, определяется третьим параметром типа bool (true – четные, false – нечетные).
+        // let start = prompt("Введите начало диапазона");
+        // let end = prompt("Введите конец диапазона");
+        // let num = confirm("Вывести четные числа?");
+        // NumberRange(start, end, num);
+
+    </script>
+</body>
+
+</html>
